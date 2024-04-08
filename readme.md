@@ -1,4 +1,4 @@
-Hi there 👋, this is a android finger painter which can draw directly on the screen and save to images. You can choose the color, size and shape of the brush. You can also load existing images as the base to draw on. The following is the screenshot of this app. 
+Hi there 👋, this is an android finger painter which can draw directly on the screen and save to images. You can choose the color, size and shape of the brush. You can also load existing images as the base to draw on. The following is the screenshot of this app. 
 
 
 
