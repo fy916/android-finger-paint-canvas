@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/brushtypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/brushsizes"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brushType"
+        app:layout_constraintVertical_bias="0.19999999">
+
+        <RadioButton
+            android:id="@+id/brushRound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectRound"
+            android:text="Round" />
+
+        <RadioButton
+            android:id="@+id/brushSquare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectSquare"
+            android:text="Square" />
+
+        <RadioButton
+            android:id="@+id/brushButt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectButt"
+            android:text="Butt" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/brushType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Brush Type"
+        app:layout_constraintEnd_toStartOf="@+id/brushSize"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/brushSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Brush Size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/brushsizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brushSize"
+        app:layout_constraintVertical_bias="0.3">
+
+        <RadioButton
+            android:id="@+id/size1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectSize1"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/size10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectSize10"
+            android:text="10" />
+
+        <RadioButton
+            android:id="@+id/size25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectSize25"
+            android:text="25" />
+
+        <RadioButton
+            android:id="@+id/size50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectSize50"
+            android:text="50" />
+
+        <RadioButton
+            android:id="@+id/size100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectSize100"
+            android:text="100" />
+
+        <RadioButton
+            android:id="@+id/size200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectSize200"
+            android:text="200" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:onClick="onClickBrushBack"
+        android:text="Back to Draw"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
